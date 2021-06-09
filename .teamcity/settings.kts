@@ -58,7 +58,7 @@ object Build : BuildType({
             type = "octopus.push.package"
             param("octopus_space_name", "Default")
             param("octopus_host", "http://18.205.176.81:8080")
-            param("octopus_packagepaths", "+:./build => ci-cd-artifact.zip")
+            param("octopus_packagepaths", "+:./build => %repository%.%build.number%.zip")
             param("octopus_publishartifacts", "true")
             param("octopus_forcepush", "false")
             param("secure:octopus_apikey", "credentialsJSON:4b9d6efe-8fff-4d80-b4f6-5b2f5699ae9b")
