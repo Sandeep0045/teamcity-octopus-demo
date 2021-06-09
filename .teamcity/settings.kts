@@ -35,8 +35,6 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = "+:./build => ci-cd-artifact.zip"
-
     vcs {
         root(DslContext.settingsRoot)
     }
