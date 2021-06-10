@@ -55,7 +55,7 @@ object Build : BuildType({
             name = "Push to Octopus"
             type = "octopus.push.package"
             param("octopus_space_name", "Default")
-            param("octopus_host", "http://3.236.126.63:8080")
+            param("octopus_host", "http://172.31.72.160:8080")
             param("octopus_packagepaths", "+:./build => ci-cd.zip")
             param("octopus_publishartifacts", "true")
             param("octopus_forcepush", "false")
